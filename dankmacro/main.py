@@ -96,9 +96,9 @@ def random(n):
 def main(argv=sys.argv):
     args = parser.parse_args(argv[1:])
     if args.time is not None:
-        t = 30 + args.time
+        t = 28.5 + args.time
     else:
-        t = 30.1
+        t = 28.6
     print(f"DELAY SET TO : {t} seconds")
     if not len(sys.argv) > 1:
         print("No flags or args given, use dankmacro -h. Exiting... ")
@@ -115,14 +115,16 @@ def main(argv=sys.argv):
             for i in a:
                 if args.beg is True:
                     beg_macro()
+                    sleep(1.5)
                 if args.fish is True:
                     fish_macro()
                 sleep(t)
             else:
                 if args.postmemes is True:
                     pm_macro()
+                    sleep(1)
                 if args.deposit is not None:
-                    random(args.d)
+                    random(args.deposit)
     except KeyboardInterrupt:
         print("EXITING")
         return None
