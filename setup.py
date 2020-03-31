@@ -21,7 +21,7 @@ setup(
     description = "A python macro for dank memer discord",
     license = "MIT",
     keywords= "macro discord python dank memer",
-    url = "git+https://github.com/TEEN-BOOM/dankmacro#egg=dankmacro",
+    url = "https://github.com/TEEN-BOOM/dankmacro",
     entry_points = {
         "console_scripts": [        # command-line executables to expose
             "dankmacro = dankmacro.main:main",
