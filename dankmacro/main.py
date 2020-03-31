@@ -104,8 +104,10 @@ def main(argv=sys.argv):
         print("No flags or args given, use dankmacro -h. Exiting... ")
         return None
     a = range(2)
-    if args.c is not None:
-        c = args.c
+    if args.countdown is not None:
+        c = args.countdown
+    else:
+        c = 3
     print(f"Starting in {c} seconds")
     sleep(c)
     try:
