@@ -1,6 +1,5 @@
 README.md
 setup.py
-dankmacro/VERSION.txt
 dankmacro/__init__.py
 dankmacro/main.py
 dankmacro.egg-info/PKG-INFO
