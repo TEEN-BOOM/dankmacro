@@ -20,26 +20,26 @@ parser.add_argument("-b", "--beg", action="store_true",help="Enables `pls beg`")
 parser.add_argument("-t", "--time", action="store",help="specify the amount of delay on top of 30 second, defaults to o.1. Usage:`dankmacro -t 0.9`",type=float)
 parser.add_argument("-d", "--deposit", action="store",help="Specify wether all coins should be deposited at random interval with probablity `1/n`, n can be be specified with `dankmacro -d 10`, defaults to 7", type=int)
 
-async def send(text:str):
+def send(text:str):
     keyboard.type(text)
     keyboard.press(Key.enter)
     sleep(0.09)
     keyboard.release(Key.enter)
     return None
 
-async def fish_macro():
+def fish_macro():
     #TIME = 0.19 seconds
-    await send("pls fish")
+    send("pls fish")
     sleep(0.1)
     return None
 
-async def beg_macro():
+def beg_macro():
     #TIME = 0.19 seconds
-    await send("pls beg")
+    send("pls beg")
     sleep(0.1)
     return None
 
-async def pm_macro():
+def pm_macro():
     #TIME = 0.59 seconds
     send("pls pm")
     c = choice(["n","r","d","n","r","d","e"])
@@ -59,27 +59,23 @@ async def pm_macro():
     send(c)
     return None
 
-async def random(n):
+def random(n):
     #TIME = 1.68 seconds
     r = randint(1,n)
     if r == floor((n + 1)/2):
         sleep(1)
-        await send("pls dep all")
+        send("pls dep all")
         return None
     else:
         return None
 
-
-async def main(argv=None):
-    if argv is None:
-        argv = sys.argv
+def main(argv=sys.argv):
     args = parser.parse_args(argv[1:])
     if args.time is not None:
         t = 30 + args.time
     else:
         t = 30.1
     print(f"DELAY SET TO : {t} seconds")
-    print(sys.argv)
     if not len(sys.argv) > 1:
         print("No flags or args given, use dankmacro -h. Exiting... ")
         return None
@@ -88,16 +84,15 @@ async def main(argv=None):
         while True:
             for i in a:
                 if args.beg is True:
-                    await beg_macro()
+                    beg_macro()
                 if args.fish is True:
-                    await fish_macro()
+                    fish_macro()
                 sleep(t)
             else:
                 if args.postmemes is True:
-                    await pm_macro()
+                    pm_macro()
                 if args.deposit is not None:
-                    await random(args.d)
+                    random(args.d)
     except KeyboardInterrupt:
         print("EXITING")
         return None
-

@@ -1,0 +1,11 @@
+README.md
+setup.py
+dankmacro/VERSION.txt
+dankmacro/__init__.py
+dankmacro/main.py
+dankmacro.egg-info/PKG-INFO
+dankmacro.egg-info/SOURCES.txt
+dankmacro.egg-info/dependency_links.txt
+dankmacro.egg-info/entry_points.txt
+dankmacro.egg-info/requires.txt
+dankmacro.egg-info/top_level.txt

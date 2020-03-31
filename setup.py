@@ -15,13 +15,13 @@ setup(
     install_requires=['pynput==1.6.8'],
     extras_require={},      # optional features that other packages can require
                             #   like 'helloworld[foo]'
-    package_data = {"helloworld": ["VERSION.txt"]},
+    package_data = {"dankmacro": ["VERSION.txt"]},
     author="TEEN_BOOM",
     author_email = "ojasscoding@gmail.com",
     description = "A python macro for dank memer discord",
-    license = "Apache 2.0",
+    license = "MIT",
     keywords= "macro discord python dank memer",
-    url = "http://github.com/dbarnett/python-helloworld",
+    url = "git+https://github.com/TEEN-BOOM/dankmacro#egg=dankmacro",
     entry_points = {
         "console_scripts": [        # command-line executables to expose
             "dankmacro = dankmacro.main:main",

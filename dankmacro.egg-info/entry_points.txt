@@ -1,0 +1,6 @@
+[console_scripts]
+dankmacro = dankmacro.main:main
+
+[gui_scripts]
+
+
