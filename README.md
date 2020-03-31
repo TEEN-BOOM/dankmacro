@@ -16,7 +16,7 @@ Hence you are responsible for any damages incurred.
 #### The Complete guide/Dummy's Guide
 
 1.Open the terminal with `ctrl+alt+t` or [click here if on windows](file://C:/Windows/System32/cmd.exe "Cmd.exe") and type `python3 -V` if the version is 3.7.3 or above, then you can proceed to the 3rd step.  
-2.if you do not have python the follow [this guide](https://realpython.com/installing-python/).  
+2.if you do not have python then follow [this guide](https://realpython.com/installing-python/).  
 3.Then type `pip3 install git+https://github.com/TEEN-BOOM/dankmacro#egg=dankmacro` in the terminal. If pip3 is not recognised then install it folllowing [this](https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/) guide (if you are using ubuntu )or simply try `pip install git+https://github.com/TEEN-BOOM/dankmacro#egg=dankmacro` (if you are on windows).  
 4.verify the install with `dankmacro -V`  
 
@@ -39,6 +39,6 @@ optional arguments:
                         Specify wether all coins should be deposited at random
                         interval with probablity `1/n`, n can be be specified
                         with `dankmacro -d 10`, defaults to 7.
-+-c COUNTDOWN, --countdown COUNTDOWN
++  -c COUNTDOWN, --countdown COUNTDOWN
                         specify the amount of time to wait before starting.
                         Defaults to 3 seconds. Usage:`dankmacro -c 9`.
