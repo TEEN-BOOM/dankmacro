@@ -39,3 +39,6 @@ optional arguments:
                         Specify wether all coins should be deposited at random
                         interval with probablity `1/n`, n can be be specified
                         with `dankmacro -d 10`, defaults to 7.
++-c COUNTDOWN, --countdown COUNTDOWN
+                        specify the amount of time to wait before starting.
+                        Defaults to 3 seconds. Usage:`dankmacro -c 9`.

@@ -39,8 +39,10 @@ parser.add_argument("-v","--version", action="version",version="DANKMACRO-" + da
 parser.add_argument("-p","--postmemes", action="store_true",help="Flag to enable `pls pm` choice of meme is random,DO NOT ENABLE WITHOUT LAPTOP!")
 parser.add_argument("-f", "--fish", action="store_true",help="Flag to enable `pls fish`. REQUIRES FISHING POLE!")
 parser.add_argument("-b", "--beg", action="store_true",help="Enables `pls beg`")
-parser.add_argument("-t", "--time", action="store",help="specify the amount of delay on top of 30 second, defaults to o.1. Usage:`dankmacro -t 0.9`",type=float)
+parser.add_argument("-t", "--time", action="store",help="specify the amount of delay on top of 30 second, defaults to 0.1. Usage:`dankmacro -t 0.9`",type=float)
 parser.add_argument("-d", "--deposit", action="store",help="Specify wether all coins should be deposited at random interval with probablity `1/n`, n can be be specified with `dankmacro -d 10`, defaults to 7", type=int)
+parser.add_argument("-c", "--countdown", action="store",help="specify the amount of time to wait before starting. Defaults to 3 seconds. Usage:`dankmacro -c 9`",type=float)
+
 
 def send(text:str):
     keyboard.type(text)
@@ -102,6 +104,10 @@ def main(argv=sys.argv):
         print("No flags or args given, use dankmacro -h. Exiting... ")
         return None
     a = range(2)
+    if args.c is not None:
+        c = args.c
+    print(f"Starting in {c} seconds")
+    sleep(c)
     try:
         while True:
             for i in a:
