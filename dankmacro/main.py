@@ -66,19 +66,7 @@ def beg_macro():
 def pm_macro():
     #TIME = 0.59 seconds
     send("pls pm")
-    c = choice(["n","r","d","n","r","d","e"])
-    #edgy meme seems to break laptop
-    #OBSERVATION:
-    # __________________
-    #|RESULT  |FREQUENCY|
-    #|▔▔▔▔▔▔▔▔|▔▔▔▔▔▔▔▔▔|
-    #|TRENDING|    2    |
-    #|NORMAL  |    5    |
-    #|HATED   |    5    | \\DOESN"T INCLUDE BROKEN 
-    #|BROKEN  |    3    |
-    #|TOTAL   |    15   | 
-    # ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ ͞ 
-    #EVEN THOUGH RESULT DEPENDS ON RANDOMNESS OF `choice()`
+    c = choice(["n","e","r","d"])# YEAH THATS YOU LOL!
     sleep(0.5)
     send(c)
     return None
