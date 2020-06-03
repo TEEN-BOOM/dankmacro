@@ -15,7 +15,7 @@ Hence you are responsible for any damages incurred.
 
 #### The Complete guide/Dummy's Guide
 
-1.Open the terminal with `ctrl+alt+t` or <a href="file://C:/Windows/System32/cmd.exe">click here if on windows</a>) and type `python3 -V` if the version is 3.7.3 or above, then you can proceed to the 3rd step.  
+1.Open the terminal with `ctrl+alt+t` or <a href="file://C:/Windows/System32/cmd.exe">click here if on windows</a> and type `python3 -V` if the version is 3.7.3 or above, then you can proceed to the 3rd step.  
 2.if you do not have python then follow [this guide](https://realpython.com/installing-python/).  
 3.Then type `pip3 install git+https://github.com/TEEN-BOOM/dankmacro#egg=dankmacro` in the terminal. If pip3 is not recognised then install it folllowing [this](https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/) guide (if you are using ubuntu )or simply try `pip install git+https://github.com/TEEN-BOOM/dankmacro#egg=dankmacro` (if you are on windows).  
 4.verify the install with `dankmacro -V`  
