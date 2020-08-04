@@ -84,9 +84,9 @@ def random(n):
 def main(argv=sys.argv):
     args = parser.parse_args(argv[1:])
     if args.time is not None:
-        t = 28.5 + args.time
+        t = 44.5 + args.time
     else:
-        t = 28.6
+        t = 44.5
     print(f"DELAY SET TO : {t} seconds")
     if not len(sys.argv) > 1:
         print("No flags or args given, use dankmacro -h. Exiting... ")
