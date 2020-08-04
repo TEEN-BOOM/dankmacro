@@ -4,7 +4,7 @@ A python macro for dank memer discord
 
 ### Usage
 
-Install the program by `python -m pip3 install git+https://github.com/TEEN-BOOM/dankmacro#egg=dankmacro`(pip3 or pip in your case) or `python setup.py install` after cloning the repo.  
+Install the program by `python -m pip install git+https://github.com/TEEN-BOOM/dankmacro#egg=dankmacro`(python3 or python in your case) or `python setup.py install` after cloning(downloading) the repo.  
 Later you may invoke the program by typing `dankmacro -b` in a shell.
 <hr>
 
