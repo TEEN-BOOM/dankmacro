@@ -18,7 +18,7 @@ Hence you are responsible for any damages incurred.
 1.Open the terminal with `ctrl+alt+t` or open cmd from search on windows and type `python3 -V` if the version is 3.7.3 or above, then you can proceed to the 3rd step.  
 2.if you do not have python then follow [this guide](https://realpython.com/installing-python/).  
 3.Then type `python -m pip install git+https://github.com/TEEN-BOOM/dankmacro#egg=dankmacro` in the terminal (`python` or `python3` or `py`)
-4.verify the install with `dankmacro -V`  
+4.verify the install with `dankmacro -V`
 
 ### Help
 
